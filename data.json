@@ -1,0 +1,40 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.3784,
+                    32.6192
+                ]
+            },
+            "properties": {
+                "title": "Hidden Glacier Valley in Lahaul",
+                "description": "A trek through the beautiful Hidden glacier valley.",
+                "url": "https://youtu.be/EINGd2xaMKE",
+                "thumbnail": "https://i3.ytimg.com/vi/EINGd2xaMKE/maxresdefault.jpg",
+                "embed": "https://www.youtube.com/embed/EINGd2xaMKE"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.4168,
+                    31.6399
+                ]
+            },
+            "properties": {
+                "title": "Autumn in Tirthan",
+                "location": "Sharchi and Gushaini",
+                "description": "A trek through villages in the beautiful Tirthan valley to Raju's cottage in Gushaini during Autumn.",
+                "url": "https://youtu.be/7EFuzRpNpwo",
+                "thumbnail": "https://i3.ytimg.com/vi/7EFuzRpNpwo/maxresdefault.jpg",
+                "embed": "https://www.youtube.com/embed/EINGd2xaMKE"
+            }
+        }
+    ]
+}

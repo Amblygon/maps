@@ -41,7 +41,10 @@
                 <div class="content">
                     <h3>${feature.properties.title}</h3>
                     <p>${feature.properties.description}</p>
-                    <a href="${feature.properties.url}"><img src="/yt_icon_rgb.png"></a>
+                    <a href="${feature.properties.url}" class="yt-link">
+                        <span class="sub-heading">${feature.properties.videoSubTitle}</span>
+                        <span class="heading">${feature.properties.videoTitle}</span>
+                    </a>
                 </div>`
 
             document.body.append(div);
@@ -53,19 +56,30 @@
 
         console.log(data);
 
-        map.addSource('locations', {
-            type: 'geojson',
-            data: data
-        });
+        // map.addSource('locations', {
+        //     type: 'geojson',
+        //     data: data
+        // });
 
         function addMarkers() {
             for (const marker of data.features) {
                 const el = document.createElement('div');
                 // el.id = `marker-${marker.properties.url}`;
-                el.className = 'marker';
+                el.classList.add('marker');
+                el.classList.add(`marker-${marker.properties.type}`)
+
+                const mapsUrl = encodeURI(`https://www.google.com/maps/search/${marker.properties.location}/`);
 
                 new mapboxgl.Marker(el, { offset: [0, -23] })
                 .setLngLat(marker.geometry.coordinates)
+                .setPopup(
+                    new mapboxgl.Popup({ offset: 25 }) // add popups
+                    .setHTML(
+                        `<div class="content">
+                            <a href="${mapsUrl}">${marker.properties.location}</a>
+                        </div>`
+                    )
+                )
                 .addTo(map);
 
                 el.addEventListener('click', (e) => {
@@ -74,7 +88,6 @@
                     });
                     createPopUp(marker);
                 });
-
             }
         }
 
@@ -82,14 +95,10 @@
             addMarkers()
         });
 
-        map.on('click', 'locations', (event) => {
-            console.log(event.features);
-
-            if (!event.features.length) return;
-
-            const clickedPoint = event.features[0];
-            createPopUp(clickedPoint);
-        });
+        // map.on('click', (event) => {
+        //     const popUps = document.getElementsByClassName('video-display');
+        //     if (popUps[0]) popUps[0].remove();
+        // });
 
     </script>
 

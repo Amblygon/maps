@@ -12,7 +12,10 @@
             },
             "properties": {
                 "title": "Hidden Glacier Valley in Lahaul",
+                "location": "Hidden Glacier Valley Lahaul",
                 "description": "A trek through the beautiful Hidden glacier valley.",
+                "videoTitle": "Hidden Glacier Valley in Lahaul",
+                "videoSubtitle": "Ronny's Vlogs: S04E05",
                 "url": "https://youtu.be/EINGd2xaMKE",
                 "thumbnail": "https://i3.ytimg.com/vi/EINGd2xaMKE/maxresdefault.jpg",
                 "embed": "https://www.youtube.com/embed/EINGd2xaMKE"
@@ -29,11 +32,76 @@
             },
             "properties": {
                 "title": "Autumn in Tirthan",
-                "location": "Sharchi and Gushaini",
+                "location": "Tirthan",
                 "description": "A trek through villages in the beautiful Tirthan valley to Raju's cottage in Gushaini during Autumn.",
+                "videoTitle": "Autumn in Tirthan",
+                "videoSubTitle": "Sarchi and Gushaini",
                 "url": "https://youtu.be/7EFuzRpNpwo",
-                "thumbnail": "https://i3.ytimg.com/vi/7EFuzRpNpwo/maxresdefault.jpg",
-                "embed": "https://www.youtube.com/embed/EINGd2xaMKE"
+                "thumbnail": "https://i3.ytimg.com/vi/7EFuzRpNpwo/maxresdefault.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.3466,
+                    32.2704
+                ]
+            },
+            "properties": {
+                "title": "Hamta Pass Trail",
+                "location": "Hamta Pass",
+                "description": "A trek through Hampta pass during the pandemic induced lockdown period.",
+                "videoTitle": "Four Days in the Wild",
+                "videoSubTitle": "Hamta Pass Trail",
+                "url": "https://youtu.be/Be1crA8hwRc",
+                "thumbnail": "https://i3.ytimg.com/vi/Be1crA8hwRc/maxresdefault.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.3052,
+                    31.7703
+                ]
+            },
+            "properties": {
+                "title": "The Hidden Wonder of the Great Himalayan National Park",
+                "location": "Sainj",
+                "description": "A trek through Hampta pass during the pandemic induced lockdown period.",
+                "videoTitle": "The Hidden Wonder of the Great Himalayan National Park",
+                "videoSubTitle": "Deohari Village, Sainj Valley",
+                "url": "https://youtu.be/JYQHTLgtLzQ",
+                "thumbnail": "https://i3.ytimg.com/vi/JYQHTLgtLzQ/maxresdefault.jpg",
+                "otherLocations": [
+                    "Deohari",
+                    "Pundrik Rishi Lake",
+                    "Upper Neahi"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.1669,
+                    32.2513
+                ]
+            },
+            "properties": {
+                "title": "Psychedelic Valley trail",
+                "location": "Manali Wildlife Sanctuary",
+                "description": "Some psyche thingy.",
+                "videoTitle": "Entrance to Psychedelic Valley - One of the Easiest Trails in Manali",
+                "videoSubTitle": "Ronnie's Vlogs: S03E06",
+                "url": "https://youtu.be/vc1WyIHCOjQ",
+                "thumbnail": "https://i3.ytimg.com/vi/vc1WyIHCOjQ/maxresdefault.jpg",
+                "otherLocations": [
+                ]
             }
         }
     ]
